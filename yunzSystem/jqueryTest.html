@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<style type="text/css">
+		*{
+			font-family: 微软雅黑；
+			margin:0px;
+			padding: 0px;
+		}
+		.jiu{
+			width: 180px;
+			overflow: hidden;
+			float: left;
+			margin-left: 35px;
+			margin-top: 15px;
+		}
+		select{
+			width: 100px;
+			height: 150px;
+		}
+
+	.menu{
+		height: 50px;
+		background: #272822;
+		line-height: 50px;
+	}
+	.menu ul{
+		list-style: none;
+
+	}
+	.menu ul li{
+		float: left;
+		color: #fff;
+		margin-left: 15px;
+		line-height: 50px;
+		width: 100px;
+		text-align: center;
+	}
+	
+	.menu ul li:hover{
+		cursor: pointer;
+		background:#ccc;
+	}
+
+
+	.info{
+		margin-top: 0px;
+		height: 200px;
+		background:#ccc;
+		
+		overflow: hidden;
+		padding: 15px;
+	}
+
+	.info p{
+		display: none;
+
+	}
+	.info p:first-child{
+		display: block;
+	}
+	.error{
+		color: #f00;
+		font-weight: bold;
+		display: none;
+	}
+	.img{
+		 background:#ccc;
+		 border-radius:256px;
+		 transform:scale3d(1.2, 1.2, 1.2);
+	}
+.d1,.d2{
+	height: 300px;
+	background: #ccc;
+}	
+.append1,.append2{
+	height: 300px;
+	background: #ccc;
+}
+.testClone{
+	height: 300px;
+	background: #ccc;
+}
+</style>
+</head>
+<body>
+	<!-- <div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+	<div class="jiu">
+		<img src="dist/img/jiu.jpg" alt=" ">
+	</div>
+</div> -->
+<!-- <div>
+	<h1>駄菓子</h1>
+	<p>
+		粗点心，是廉价的零食的统称，其中承载了无数孩子们的梦想！ 家在偏僻半岛的鹿丸粗点心屋的儿子·九，勉为其难的被父亲拜托看店。父亲称自己在粗点心领域有天赋，然而自己却不想继承家业。某天偶遇了点心控的迷之美少女.....乡村的“点心之夏”开始了
+	</p>
+	<h1>駄菓子</h1>
+	<p>
+		粗点心，是廉价的零食的统称，其中承载了无数孩子们的梦想！ 家在偏僻半岛的鹿丸粗点心屋的儿子·九，勉为其难的被父亲拜托看店。父亲称自己在粗点心领域有天赋，然而自己却不想继承家业。某天偶遇了点心控的迷之美少女.....乡村的“点心之夏”开始了
+	</p>
+</div> -->
+
+<!-- <div>
+<h1>水果选择：</h1>
+<form action="javascript:">
+	<select name="" id="s1" size="2">
+		<option value="">西瓜</option>
+		<option value="">梨</option>
+		<option value="">苹果</option>
+		<option value="">南瓜</option>
+		
+	</select>
+	<input type="button" name="" value=">>" id="btn">
+	<select name="" id="s2" size="2"></select>
+
+</form>
+</div> -->
+<!-- <h1 name = 'red'>aaaaaaaaaaaaaaaaaa</h1>
+<h1 name = 'blue'>aaaaaaaaaaaaaaaaaa</h1>
+<h1 name = 'yellow'>aaaaaaaaaaaaaaaaaa</h1>
+<h1 name = 'test123'>aaaaaaaaaaaaaaaaaa</h1>
+<h1 name = 'test456' id="123">aaaaaaaaaaaaaaaaaa</h1> -->
+
+
+<div class="menu">
+	<ul>
+		<li>linux</li>
+	    <li>python</li>
+		<li>ruby</li>
+	</ul>
+</div>
+
+<div class="info">
+	<p>linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system  linux is a system linux is a system linux is a system linux is a system linux is a system linux is a system</p>
+
+    <p>python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge python is a languge</p>
+
+    <p>ruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazingruby is very amazingruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazingruby is very amazingruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazingruby is very amazingruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazingruby is very amazingruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazingruby is very amazingruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazing ruby is very amazingruby is very amazingruby is very amazing  </p>
+</div>
+
+
+<!-- <div class="div1">
+	<h1>第一级</h1>
+	<h1>第一级</h1>
+
+	<div class="div2">
+	<h1>第二级</h1>
+</div>
+</div>
+<div>
+<p>bbbbbbbbbbbbbbb</p>
+</div>
+<h2>ccccccccccccccc</h2>
+<h2>eeeeeeeeeeeeeee</h2>
+<h2>eeeeeeeeeeeeeee</h2>
+<h2>eeeeeeeeeeeeeee</h2>
+<h2></h2>
+
+
+<div>
+	<h1>ccccccccccccccc</h1>
+	<h1>eeeeeeeeeeeeeee</h1>
+	<h1>eeeeeeeeeeeeeee</h1>
+	
+</div>
+<div>
+	<h1>ffffffffffffffff</h1>
+</div> -->
+<form>
+	<p>选择爱好：</p>
+	<p>
+		<label><input type="checkbox" name="" id="">SC2</label>
+	</p>
+	<p><label><input type="checkbox" name="" id="">DOTA</label></p>
+	<p><label><input type="checkbox" name="" id="">sst</label></p>
+	<p><label><input type="checkbox" name="" id="">ll</label></p>
+
+</form>
+	<p>
+		<button id='all'>全选</button>
+		<button id='notall'>全不选</button>
+		<button id='unall'>反选</button>
+		<button id="OK">OK</button>
+	</p>
+
+	<div class="aaa">
+		
+	</div>
+
+
+
+<!-- 表单验证 -->
+
+<!-- <form action="http://www.jd.com/reg.php">
+	<p>用户名：</p>
+	<p><input type="text" name="username" class="auth">
+	<span class="error">用户名的长度至少6位！</span>
+	</p>
+	<p>密码：</p>
+	<p><input type="password" name="password" class="auth">
+		<span class="error">密码的长度至少8位！</span>
+	</p>
+	<p>确认密码：</p>
+	<p><input type="password" name="rePassword" class="auth">
+		<span class="error">两次密码不一致</span>
+	</p>
+	<p>邮箱：</p>
+	<p><input type="text" name="email" class="auth">
+	<span class="error">邮箱格式不正确</span>
+	</p>
+	<p>手机号码：</p>
+	<p><input type="text" name="phone" class="auth" maxlength="11">
+	<span class="error">手机格式不正确</span>
+	</p>
+	<p><input type="submit" name="" value="OK"></p>
+</form> -->
+
+<div>
+	<img src="dist/img/user4-128x128.jpg" class="">
+</div>
+
+
+
+<div class="d1">
+	<img src="dist/img/user4-128x128.jpg">
+	<img src="dist/img/user4-128x128.jpg">
+	<img src="dist/img/user4-128x128.jpg">
+	<img src="dist/img/user4-128x128.jpg">
+	<img src="dist/img/user4-128x128.jpg">
+</div>
+<button name="b1">>></button>
+<div class="d2"></div>
+
+<div class="append1">
+	<h1>00000000001</h1>
+	<h1>00000000002</h1>
+	<h1>00000000003</h1>
+	<h1>00000000004</h1>
+	<h1>00000000005</h1>
+</div>
+<button name="b3">转移</button>
+<div class="append2"></div>
+
+<div class="testClone">
+	<img src="dist/img/user4-128x128.jpg">
+</div>
+
+</body>
+<script type="text/javascript">
+
+//toggle()循环单机  hover()=mousein+mouseout
+// 	$("img#ID").toggle(
+// 	function(){
+// 		this.src = "a.png";
+// 	},
+// 	function(){
+// 		this.src = "b.png";
+// 	}
+// );
+// //动画滑动特效
+// 	$("img").hover(
+// 		function() {
+// 		/* Stuff to do when the mouse enters the element */
+// 		$(this).animate({"margin-left":"-100px"}, 100)
+// 	}, function() {
+// 		/* Stuff to do when the mouse leaves the element */
+// 		$(this).animate({"margin-left":"0px"}, 100)
+// 	});
+// //单击标题切换内容
+// 	$("h1").click(function() {
+// 		$(this).next().toggle(500);
+// 	});
+
+// //select值传递
+// $("#btn").click(function(event) {
+// 	/* Act on the event */
+// 	//$("#s1 option:selected").appendTo('#s2');
+// 	$("#s1 option:selected").clone().appendTo('#s2');
+// });
+
+//each()jquery对象遍历 -> 单击换行号
+// $('h1').each(function(i) {
+// 	$('h1').get()[i].setAttribute('num',i + 1)
+// });
+
+// $('h1').click(function(event) {
+// 	 Act on the event 
+// 	this.innerHTML = this.getAttribute('num');
+// 	// $(this).html($(this).attr('num'););
+// });
+
+
+
+//data()举例
+
+$('h1').each(function(i) {
+	 $(this).data({'num':i + 1});
+});
+
+$('h1').click(function(event) {
+	/* Act on the event */
+	$(this).html($(this).data('num'));
+});
+
+//index() 搜索索引返回索引值例子
+$('.menu li').eq(0).css({'background':'#ccc'});
+
+$('.menu li').mouseenter(function(event) {
+	$(this).css({'background':'#ccc'});
+	$('.menu li').not($(this)).css({
+		'background': '#282722'
+	});
+
+	idx = $(this).index('.menu li');
+
+	$('.info p').eq(idx).show();
+	$('.info p').not($('.info p').eq(idx)).hide();
+});
+	//常用标签选择器
+	//$('h1,p').css('color', '#f00');
+
+	//层级选择器
+	// $('.div1 > h1').css({'color':'red'});
+	// $('.div1 + h1').css('color', 'green');
+	// $('.div1~h2').css('color', 'yellow');
+
+	//基本选择器
+	// $('h2:first').css('color', '#00f');
+	// $('h2:not(:first)').css('color', 'red');
+	// $('h2:even').css('color', 'yellow');//偶数
+ //    $('h2:odd').css('color', 'blue');//奇数
+	// $('h2:eq(2)').css('color', 'white');
+	// $('h2:gt(2)').css('color', '#00f');
+	// $('h2:lt(1)').css('color', 'black');
+
+	//内容选择器
+ //    $('div:has(p)').css('color', 'red');
+	// $('h2:not(:empty)').css('color', '#00f');
+	// $('h2:empty').html("Pop team pice");
+	// $('div:parent').css('color', 'orange');//含有子元素
+
+	//属性选择器
+	// $('h1[name = blue]').css('color', '#00f');
+	// $('h1[name = yellow]').css('color', 'yellow');
+	// $('h1[name^= test]').css('color', 'orange');//开头匹配
+	// $('h1[name$= 456]').css('color','orange');//结尾匹配
+	// $('h1[name*= b]').css('color','orange');//包含
+	// $('h1[name][id]').css('color','orange');//双重匹配
+	// $('h1[name!=user]').css('color', 'red');
+	//子元素选择器
+	// $('div h2:first-child').css('color', '#00f');//首个子元素
+	// $('div h2:last-child').css('color', '#00f');//最后一个子元素
+	// $('div h2:nth-child(2)').css('color', '#00f');//nth选择，从1开始
+	// $('div h1:only-child').css('color', 'red');//只含有一个子元素
+
+
+	//表单验证
+
+	$('.auth').data('s', 0);
+
+	$('input[name = username]').blur(function(event) {//blur失去焦点
+		val = this.value;
+		if(val.length < 6){
+			$(this).data('s', 0);
+			$(this).next().show();
+		}else{
+			$(this).data('s', 1);
+			$(this).next().hide();
+		}
+	});;
+	$('input[name = password]').blur(function(event) {
+		val = this.value;
+		if(val.length < 8){
+			$(this).data('s', 0);
+			$(this).next().show();
+		}else{
+			$(this).data('s', 1);
+			$(this).next().hide();
+		}
+	});
+	$('input[name = rePassword]').blur(function(event) {
+		val = this.value;
+		if (val != $('input[name = password]').val()){
+			$(this).data('s', 0);
+			$(this).next().show();
+		}else{
+			$(this).data('s', 1);
+			$(this).next().hide();
+		}
+	});
+		$('input[name = email]').blur(function(event) {
+		val = this.value;
+		if (val.match(/^\w+@\w+\.\w+$/i)){
+			$(this).data('s', 1);
+			$(this).next().hide();
+		}else{
+			$(this).data('s', 0);
+			$(this).next().show();
+		}
+	});
+
+		$('input[name = phone]').blur(function(event) {
+		val = this.value;
+		if (val.match(/^139\d{8}$/)){
+			$(this).data('s', 1);
+			$(this).next().hide();
+		}else{
+			$(this).data('s', 0);
+			$(this).next().show();
+		}
+	});
+	$('form').submit(function(){
+		$('.auth').blur();
+		tot = 0;
+		$('.auth').each(function() {
+			tot += $(this).data('s');
+		});
+		if(tot != 5){
+		return false;
+		}
+	});
+
+	$('#all').click(function(event) {
+		
+		//$(':checkbox').attr('checked', true);//1.7以上版本attr方法只生效一次
+		$(':checkbox').prop({
+			'checked': true
+		})
+		
+	});
+	$('#notall').click(function(event) {
+		$(':checked').prop({
+			'checked': false
+		})
+		//$(':checkbox').attr('checked',false);
+		
+	});
+	$('#unall').click(function(event) {
+		$(':checkbox').each(function(index, el) {
+			this.checked=!this.checked;
+		});
+	});
+	$('#OK').click(function(event) {
+		$(':checked').parent().parent().appendTo('.aaa');
+	});
+
+
+
+	// $('img').click(function(event) {
+	// 	//this.src = "dist/img/user3-128x128.jpg";
+	// 	$(this).attr({
+	// 		'src': 'dist/img/user3-128x128.jpg'
+	// 	});
+	// 	alert($(this).attr('src'));
+		
+
+	// });
+	$('img').mouseenter(function(event) {
+		//$(this).addClass('img');
+		$(this).toggleClass('img');
+	});
+
+	$('img').mouseleave(function(event) {
+		//$(this).removeClass('img');
+		$(this).toggleClass('img');
+			
+		
+	});
+
+	$('button[name = b1]').click(function(event) {
+		val = $('.d1').html();
+		$('.d2').html(val);
+	});
+
+	$('.append1 h1').click(function(event) {
+		// $('.append2').prepend($(this));
+		// $(this).prependTo('.append2');//前追加
+
+		//$('.append2').append($(this));
+		// $(this).appendTo('.append2');
+		// $('.append2').after($(this));//外部插入
+		// $(this).insertAfter('.append2');
+		// $('.append2').before($(this));
+		// $(this).insertbefore('.append2');
+
+	});
+
+	$('button[name = b3]').click(function(event) {
+		$('.append1 h1').each(function(index, el) {
+			$(this).appendTo('.append2');
+		});
+	});
+
+	// $('p').wrap('<div class="extra-wrapper"></div>');
+	// $('p').wrapInner('<div class="extra-wrapper"></div>');
+	// $('p').wrapAll('<div class="extra-wrapper"></div>');//外部全包围，放在一起包围
+
+$('img').click(function(event) {
+	$(this).after($(this).clone(true));
+});
+
+
+</script>
+</html>

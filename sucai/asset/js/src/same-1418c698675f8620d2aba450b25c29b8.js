@@ -1,0 +1,2 @@
+//# sourceMappingURL=same.js.map
+same();window.onresize=function(){same()};function same(){var a=document.documentElement.clientWidth/192,b=document.documentElement.clientWidth/100;10>a&&10<b?document.getElementsByTagName("html")[0].style.fontSize=10*a+"px":10>=b?document.getElementsByTagName("html")[0].style.fontSize=100/192*100+"px":10<=a&&(document.getElementsByTagName("html")[0].style.fontSize="100px")};
