@@ -10,6 +10,9 @@
 			margin:0px;
 			padding: 0px;
 		}
+		body{
+			overflow-x: hidden;
+		}
 		.banner{
 			
 			height: 90px;
@@ -38,6 +41,7 @@
 			overflow: hidden;
 			background: #900;
 			color: #fff;
+			overflow-x: hidden;
 		}
 		.div2 ul {
 			width: 1200px;
@@ -75,9 +79,12 @@
 			list-style: none;
 		}
 		.div4 ul li{
-			color: #fff;
+			
 			padding-left: 15px;
 			line-height: 30px;
+		}
+		.div4 ul li span{
+			color: #fff;
 		}
 		.div4 ul li:hover{
 			
@@ -97,6 +104,8 @@
 		}
 
 	</style>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 <div class="banner">
@@ -147,7 +156,28 @@
 	
 </body>
 <script type="text/javascript">
-	$('.right').eq(0).show();
+		$('.div4 li').mouseenter(function() {
+
+		x = $(this).position().left + 150;
+		y = $(this).position().top;
+
+		$(this).css({
+			'background': '#eee',
+			'color': '#b61d1d'
+		});	
+		$('.div4 li').not($(this)).css('background', '#b61d1d');
+		$(this).find('span').css('color', 'white');
+
+		$(this).find('.right').css({'top':y+'px','left':x+'px'}).show();
+		$('.right').not($(this).find('.right')).hide();
+
+
+
+	});
+	$('.div4 li').mouseleave(function(event) {
+		$(this).find('.right').hide();
+		$(this).find('span').css('color', '#fff');
+		$(this).css('background', '#b61d1d');
+	});
 </script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
 </html>
