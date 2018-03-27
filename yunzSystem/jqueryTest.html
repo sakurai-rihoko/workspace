@@ -85,6 +85,20 @@
 	height: 300px;
 	background: #ccc;
 }
+.div3{
+	width: 300px;
+	height: 300px;
+	background: #ccc;
+	border: 30px;
+}
+.shop{
+	width: 1300px;
+	height: 300px;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px 5px #ccc;
+	float: left;
+	margin-left: 30px;
+}
 </style>
 </head>
 <body>
@@ -270,6 +284,18 @@
 	<img src="dist/img/user4-128x128.jpg">
 </div>
 
+<div class = "div3">
+	<img src="dist/img/user4-128x128.jpg">
+</div>
+
+
+<div class="shop">
+	<img src="dist/img/user3-128x128.jpg">
+	<img src="dist/img/user3-128x128.jpg">
+	<img src="dist/img/user3-128x128.jpg">
+	<img src="dist/img/user3-128x128.jpg">
+	<img src="dist/img/user4-128x128.jpg" name = "shop1" style="display: none;">
+</div>
 </body>
 <script type="text/javascript">
 
@@ -520,10 +546,53 @@ $('.menu li').mouseenter(function(event) {
 	// $('p').wrapInner('<div class="extra-wrapper"></div>');
 	// $('p').wrapAll('<div class="extra-wrapper"></div>');//外部全包围，放在一起包围
 
-$('img').click(function(event) {
-	$(this).after($(this).clone(true));
+// $('img').click(function(event) {
+// 	$(this).after($(this).clone(true));
+// });
+
+// $('.div3 > img').click(function(event) {
+// 	w = $(this).width();
+// 	h = $(this).height();
+// 	alert(w + '|' + h);
+// });
+
+// $('.div3 > img').click(function(event) {
+// 	// w = $(this).innerWidth();
+// 	// h = $(this).innerHeight();
+// 	w = $(this).outerWidth();
+// 	h = $(this).outerHeight();
+// 	alert(w + '|' + h);
+// });
+
+// $('.div3 > img').load(function(event) {
+// 	w = $(this).width();
+// 	h = $(this).height();
+// 	alert(w + '|' + h);
+// });
+
+// h = $(window).height();
+// w = $(window).width();
+// alert(w+ '|' + h);
+
+// d_h = $(document).height();
+// d_w = $(document).width();
+
+// alert(d_w + '|' + d_h);
+
+$(window).scroll(function(event) {
+	h = $(window).scrollTop();
+	document.title = h;
 });
 
+$('.shop').mouseenter(function(event) {
+	w = $(this).offset().left;
+	h = $(this).offset().top+300;
+	//alert(w + '-' + h);
+	$('img[name = shop1]').show().css({
+		'top': y+'px',
+		'left':x+'px'
+	});
+});
 
 </script>
 </html>

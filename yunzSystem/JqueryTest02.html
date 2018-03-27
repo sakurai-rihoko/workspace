@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		*{
+			font-family: 微软雅黑;
+			margin:0px;
+			padding: 0px;
+		}
+		.banner{
+			
+			height: 90px;
+			
+			overflow: hidden;
+		}
+		.banner img{
+			margin-left: -250px;
+		}
+		.nav{
+			height: 15px;
+		}
+		
+		.menu{
+			height: 470px;
+			background: url('dist/img/img10.jpg') -200px;
+		}
+		.div1{
+			width: 1000px;
+			height: 470px;
+			background: #ccc;
+			margin:0 auto;
+		}
+		.div2{
+			height: 40px;
+			overflow: hidden;
+			background: #900;
+			color: #fff;
+		}
+		.div2 ul {
+			width: 1200px;
+			margin: 0 auto;
+			margin-left: 50px;
+			list-style: none;
+
+		}
+		.div2 ul li{
+			float: left;
+			line-height: 40px;
+			margin-left: 30px;
+			cursor:pointer;
+		}
+		.bannerList{
+			margin-left: 0px;
+			background: #ce171f;
+			width: 150px;
+			text-align: center;
+		}
+		.div3{
+			width: 1027px;
+			height: 470px;
+			/*background: #ccc;*/
+			margin: 0 auto;
+			position: relative;
+			/*opacity: 0.2;*/
+		}
+		.div4{
+			width: 150px;
+			height: 470px;
+			background: #b61d1d;
+		}
+		.div4 ul{
+			list-style: none;
+		}
+		.div4 ul li{
+			color: #fff;
+			padding-left: 15px;
+			line-height: 30px;
+		}
+		.div4 ul li:hover{
+			
+			cursor: pointer;
+			
+		}
+		.right{
+			width: 847px;
+			height: 470px;
+			background: #eee;
+			position: absolute;
+			top: 0px;
+			left: 150px;
+			padding-left: 15px;
+			display: none;
+
+		}
+
+	</style>
+</head>
+<body>
+<div class="banner">
+	<img src="dist/img/imgbanner.jpg" >
+</div>
+<div class="nav">
+	
+</div>
+
+		<div class="div2">
+			<ul>
+				<li class="bannerList">全部商品分类</li>
+				<li>首页</li>
+				<li>葡萄酒馆</li>
+				<li>清仓</li>
+				<li>团购</li>
+				<li>新品发现</li>
+			</ul>
+		</div>
+
+<div class="menu">
+	<div class="div3">
+		<div class="div4">
+			<ul>
+				<li>
+					<span>家用电器</span>
+					<div class="right">
+						<p>家用电器</p>
+					</div>
+				</li>
+				<li><span>手机数码</span>
+					<div class="right">
+						<p>手机数码</p>
+					</div></li>
+				<li><span>电脑办公</span>
+					<div class="right">
+						<p>电脑办公</p>
+					</div></li>
+				<li><span>家居家具</span>
+					<div class="right">
+						<p>家居家具</p>
+					</div></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	
+</body>
+<script type="text/javascript">
+	$('.right').eq(0).show();
+</script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+</html>
