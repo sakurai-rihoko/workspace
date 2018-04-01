@@ -1,0 +1,11 @@
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/obj/x86/Debug/HTTP_POST_YUNZ.csproj.CoreCompileInputs.cache
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/bin/Debug/HTTP_POST_YUNZ.exe
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/bin/Debug/HTTP_POST_YUNZ.pdb
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/bin/Debug/JSONRequest.Net.dll
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/bin/Debug/Newtonsoft.Json.dll
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/bin/Debug/System.Net.Http.Formatting.dll
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/bin/Debug/Newtonsoft.Json.xml
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/bin/Debug/System.Net.Http.Formatting.xml
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/obj/x86/Debug/HTTP_POST_YUNZ.csprojResolveAssemblyReference.cache
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/obj/x86/Debug/HTTP_POST_YUNZ.exe
+/Users/tokido_saya/Desktop/workspace/C#/HTTP_POST_YUNZ/HTTP_POST_YUNZ/obj/x86/Debug/HTTP_POST_YUNZ.pdb

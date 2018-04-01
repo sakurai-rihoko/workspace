@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			
+			margin:0px;
+			padding: 0px;
+		}
+		.div1{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+
+		}
+		ul{
+			width: 150px;
+			height: 200px;
+			background: #ccc;
+
+		}
+		ul li{
+			text-align: center;
+			line-height: 25px;
+		}
+	</style>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+	<!-- <div class="div1">
+		<img src="dist/img/user4-128x128.jpg" alt="">
+	</div> -->
+	
+		<ul>
+			<li>第一菜单</li>
+			<li>第一菜单</li>
+			<li>第一菜单</li>
+			<li>第一菜单</li>
+			<li>第一菜单</li>
+		</ul>
+	
+	<!-- <button name = "add">添加单击事件</button>
+	<button>删除单击事件</button>
+ -->
+	<script type="text/javascript">
+		// $('window').load(function() {
+		// 	 w = $('img').width();
+		//  h = $('img').height();
+
+		//  alert(w + '|' +h);
+		// });
+		// i = 0;
+		// $('button').eq(0).click(function() {
+		// 	//$('img').click(function() {
+		// 		$('img').bind('click',function() {
+		// 			/* Act on the event */
+				
+		// 		if(i%2 ==0){
+		// 			this.src = "dist/img/user3-128x128.jpg";
+		// 		}else{
+		// 			this.src = "dist/img/user4-128x128.jpg";
+		// 		}
+		// 		i++;
+		// 	});
+		// });
+
+// $('button').eq(0).click(function() {
+// 			//$('img').click(function() {
+// 				$('img').one('click',function() {
+// 					/* Act on the event */
+				
+// 				if(i%2 ==0){
+// 					this.src = "dist/img/user3-128x128.jpg";
+// 				}else{
+// 					this.src = "dist/img/user4-128x128.jpg";
+// 				}
+// 				i++;
+// 			});
+// 		});
+
+// 		$('button').eq(1).click(function() {
+// 			//$('img').click(function() {
+// 				$('img').unbind('click');		
+// 		});
+
+
+// function drag(obj){
+// 	obj.bind('mousedown', start);
+
+// 	function start(event){
+
+// 	}
+
+
+//制作右键菜单
+
+
+
+
+
+
+$('document').contextmenu(function(event) {
+	x = event.clientX;
+	y = event.clientY;
+
+	document.title = x + '-' + y;
+
+
+	btn = event.button;
+	if(btn == 2){
+		$('ul').css({'left':x + 'px','top':y + 'px'});
+		return false;
+	}
+});
+
+	</script>
+</body>
+</html>
