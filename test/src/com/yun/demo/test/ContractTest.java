@@ -1,14 +1,15 @@
-package com.yun.test;
+package com.yun.demo.test;
 
 import com.alibaba.fastjson.JSONArray;
+
 import com.alibaba.fastjson.JSONObject;
-import com.yun.util.http.HttpUtil;
+import com.yun.demo.util.http.*;
 
 import java.util.Map;
 
 public class ContractTest {
     public static void main(String[] args) {
-        ContractTestQY t=new ContractTestQY();
+        ContractTest t=new ContractTest();
         t.create();
         //t.token();
 
@@ -22,7 +23,7 @@ public class ContractTest {
         JSONObject json = new JSONObject();
 
         json.put("title","勤亿租赁合同");
-        json.put("templateId","TEM1000529");
+        json.put("templateId","TEM1000701");
         json.put("contractPrice","100000");
         json.put("sginRegionName","杭州市");
         json.put("courtRegionName","杭州市");
@@ -67,6 +68,7 @@ public class ContractTest {
         contractJson.put("${payee_bank}","上海工商银行"); //出租人开户行
         contractJson.put("${b_accounts}","78712631983913312"); //出租人银行账号
 
+		contractJson.put("${overdue_rate}","0.5%"); //逾期利率 (固定值0.5%)
         contractJson.put("${repayment_count}","12"); //租赁期(多少个月)
         contractJson.put("${ensure_price}","5000"); //保证金
         contractJson.put("${service_price}","2000"); //手续费

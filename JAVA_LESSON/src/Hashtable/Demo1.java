@@ -19,5 +19,7 @@ public class Demo1 {
 		 
 		String url= pro1.getProperty("url", "test");
 		System.out.println(url);
+		
+		
 	}
 }
