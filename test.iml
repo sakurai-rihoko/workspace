@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/software/fastjson-1.2.47.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/commons-codec-1.10.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/commons-logging-1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/fluent-hc-4.5.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpclient-4.5.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpclient-cache-4.5.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpclient-win-4.5.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpcore-4.4.9.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpmime-4.5.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/jna-4.4.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/jna-platform-4.4.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/commons-cli-1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/httpcore-4.4.9.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/httpcore-ab-4.4.9.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/httpcore-nio-4.4.9.jar!/" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/test/src" expected_position="1" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/test/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/test">
+      <sourceFolder url="file://$MODULE_DIR$/test/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="fastjson-1.2.47.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/fastjson-1.2.47.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec-1.10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/commons-codec-1.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/commons-logging-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fluent-hc-4.5.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/fluent-hc-4.5.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-4.5.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpclient-4.5.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-cache-4.5.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpclient-cache-4.5.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-win-4.5.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpclient-win-4.5.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-4.4.9.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpcore-4.4.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpmime-4.5.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/httpmime-4.5.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jna-4.4.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/jna-4.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jna-platform-4.4.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-client-4.5.5/lib/jna-platform-4.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-cli-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/commons-cli-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/httpcore-4.4.9.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/httpcore-4.4.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-ab-4.4.9.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/httpcore-ab-4.4.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-nio-4.4.9.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/software/httpcomponents-core-4.4.9/lib/httpcore-nio-4.4.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

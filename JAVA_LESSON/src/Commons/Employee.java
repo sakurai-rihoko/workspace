@@ -22,6 +22,6 @@ public class Employee {
 	}
 
 	public String toString() {
-		return "码农"+this.name+"薪水"+this.salary;
+		return "声优"+this.name+"薪水"+this.salary;
 	}
 }
