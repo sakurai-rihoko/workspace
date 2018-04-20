@@ -49,11 +49,15 @@ class Jvm{
 	private Jvm() {
 
 	}
-	public static Jvm getInstance(long time) throws InterruptedException {
+	public static  Jvm getInstance(long time) throws InterruptedException {//增加synchronized保障对象唯一性
+		if(null==instance) {//经典双重检查，提高已经存在对象的效率
+		synchronized(Jvm.class) {//静态类没有this需要检查模板
 		if(null == instance) {
-			Thread.sleep(time);
+			Thread.sleep(time);//方法错误
 			instance = new Jvm();
 		}
+		}
+	}
 		return instance;
 	}
 }
