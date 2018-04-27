@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="/Users/tokido_saya/Desktop/workspace/software/commons-collections4-4.1/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="/Users/tokido_saya/Desktop/workspace/software/guava-14.0.1.jar"/>
 	<classpathentry kind="lib" path="/Users/tokido_saya/Desktop/workspace/software/guava-24.1-jre.jar"/>
+	<classpathentry kind="lib" path="/Users/tokido_saya/Desktop/workspace/software/javassist-3.15.0-GA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

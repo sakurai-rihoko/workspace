@@ -20,13 +20,5 @@ public class Test01 {
 		//Guava ImmutableList 不可再改变 对只读设置安全可靠，简单
 		List<String> immutableList = ImmutableList.of("a","b","c");
 		immutableList.add("e");
-
-
-
-
-
-
-
-
 	}
 }

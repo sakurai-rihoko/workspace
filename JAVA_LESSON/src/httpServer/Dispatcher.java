@@ -42,26 +42,26 @@ public class Dispatcher implements Runnable {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
-		Servlet s1 = new LoginServlet();
 		try {
+		Servlet s1 = (Servlet)WebApp.getServlet(req.getUrl());
+		if(s1 == null) {
+			this.code = 404;//找不到对应的处理
+		}else {
 			s1.service(req, res);
-		} catch (Exception e2) {
+		}
+		res.pushToClient(client, code);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e2.printStackTrace();
+			//e.printStackTrace();
+			this.code = 500;
 		}
 		try {
-			res.pushToClient(client, code);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			try {
 				res.pushToClient(client, 500);
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-		}
+
 		CloseUtil.close(client);
 	}
 

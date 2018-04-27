@@ -12,8 +12,15 @@ public abstract class Servlet {
 //		response.addResponseContent("<html><head><title>HTTP Response</title></head><body>it works,welcome:");
 //		response.addResponseContent(request.getParamterValue("uname"));
 //		response.addResponseContent("</body></html>");
-		this.doGet(request,response);
-		this.doPost(request,response);
+		if(request.getMethod().equalsIgnoreCase("post")) {
+			this.doPost(request,response);
+		}else if(request.getMethod().equalsIgnoreCase("get")) {
+			this.doGet(request,response);
+		}else {
+
+		}
+
+
 	}
 
 	public abstract void doGet(Request request,Response response) throws Exception;
